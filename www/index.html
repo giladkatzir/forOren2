@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Massive Knowledge</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    </head>
+    <body class="home">
+        <article class="textLeft" id="main">
+            <img class="logo" src="https://lh4.googleusercontent.com/rLd_9AQcpcQcXWZhk1arAjprKcAIuOxm1kZHlpzemX4dd6Cbeg9GGJGdWrIAyDU1zE_hiIIJVg">
+            <h1>Massive Knowledge</h1>
+            <p>Our goal is to provide management with the most accurate company inside knowledge. We aim on bringing in depth insights about revenue, profit and workforce based on accumulated employee experience. In order to do so, we would like to ask you three questions as follows:
+</p>
+            <div>
+                <form method="POST" id="testForm">
+                  <label>In 2015 sales were XXX. Management predicted sales to be YYY. What do you think will be the sales volume in 2016 (higher or lower than 2015)?</label>
+                  <p>Use all of your knowledge based on conversations with peers, management, competitors, customers, hall talks etc.</p>
+                  <select name="firstQuestion">
+                    <option value = "Higher than 2015">Higher than 2015</option>
+                    <option value = "Lower than 2015">Lower than 2015</option>
+                  </select><br>
+                  <label>Will 2016 sales be significantly higher or moderately higher?</label>
+                  <select name="secondQuestion">
+                    <option value = "Significantly higher">Significantly higher</option>
+                    <option value = "Moderately higher">Moderately higher</option>
+                  </select><br>
+                  <button type="submit" id="submitButton">Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
+                </form>
+            </div>
+            <section id="post-results-container">
+              <h2>Thank You For Your Answer</h2>
+            </section>
+        </article>
+      <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript" src="js/form-handler.js"></script>
+    </body>
+</html>
